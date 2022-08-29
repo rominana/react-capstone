@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import getElementFromAPI from '../../elements/getElementsFromAPI';
 
-const GET_REGIONS = 'world-bank-gdp-app/regions/GET_REGIONS';
+const GET_REGIONS = 'react-capstone/regions/GET_REGIONS';
 const initialState = [];
 
 const fetchRegions = createAsyncThunk(

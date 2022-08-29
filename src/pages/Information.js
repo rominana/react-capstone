@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Details = (props) => {
+const Information = (props) => {
   const { country } = props;
   return (
     <div>
@@ -10,8 +10,8 @@ const Details = (props) => {
   );
 };
 
-Details.propTypes = {
+Information.propTypes = {
   country: PropTypes.string.isRequired,
 };
 
-export default Details;
+export default Information;
