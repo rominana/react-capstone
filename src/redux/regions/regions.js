@@ -1,0 +1,25 @@
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import getElementFromAPI from '../../elements/getElementsFromAPI';
+
+const GET_REGIONS = 'react-capstone/regions/GET_REGIONS';
+const initialState = [];
+
+const fetchRegions = createAsyncThunk(
+  GET_REGIONS,
+  async () => {
+    const response = await getElementFromAPI();
+    return response;
+  },
+);
+
+const regionsSlice = createSlice({
+  name: 'regions',
+  initialState,
+  reducers: {},
+  extraReducers: (builder) => {
+    builder.addCase(fetchRegions.fulfilled, (state, action) => action.payload);
+  },
+});
+
+export default regionsSlice.reducer;
+export { fetchRegions };
