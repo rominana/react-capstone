@@ -1,14 +1,14 @@
 const JSON_FORMAT = '?format=json';
 const WB_URL = 'http://api.worldbank.org/v2/';
 const WB_REGIONS = `http://api.worldbank.org/v2/region/${JSON_FORMAT}`;
-const GDP_INDICATOR = 'NY.GDP.MKTP.CD';
+const GDP_INDEX = 'NY.GDP.MKTP.CD';
 
 const generateCountryURL = (countryCode) => (
   `${WB_URL}/country/${countryCode}/${JSON_FORMAT}`
 );
 
 const generateCountryGdpURL = (countryCode) => (
-  `${WB_URL}/country/${countryCode}/indicator/${GDP_INDICATOR}${JSON_FORMAT}`
+  `${WB_URL}/country/${countryCode}/indicator/${GDP_INDEX}${JSON_FORMAT}`
 );
 
 const generateCountriesURL = (regionCode) => (
