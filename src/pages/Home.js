@@ -16,7 +16,7 @@ const Home = () => {
     <div className="wrapper">
       <ul className="regions">
         {regions.map((region) => (
-          <li key={region.code} className="region">
+          <li key={`${region.code}-menu`} className="regionMenu">
             <Link to={`/countries/${region.code}`}>
               <div className="map">
                 {<MapChart region={region.code} /> || <Loading />}

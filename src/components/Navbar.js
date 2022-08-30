@@ -22,11 +22,15 @@ const Navbar = () => {
   if (title === 'details') {
     link = `/countries/${currentCountry.region.id}`;
   }
-
   const handleClickMenu = () => {
+    const { display } = document.getElementById('menu').style;
+    if (display === 'block') {
+      document.getElementById('menu').style.display = 'none';
+    } else {
+      document.getElementById('menu').style.display = 'block';
+    }
     const { children } = document.getElementById('menuLink');
     [...children].forEach((child) => child.classList.toggle('activeIcon'));
-    document.getElementById('menu').style.display = 'block';
   };
 
   const handleClickSearch = () => {
@@ -41,18 +45,18 @@ const Navbar = () => {
     <header>
       <div className="hamburgerIcon">
         {
-          pathname !== '/'
-            ? (
-              <Link to={link} id="backLink">
-                <MdArrowBackIosNew />
-              </Link>
-            )
-            : (
-              <button type="button" id="menuLink" onClick={handleClickMenu}>
-                <GiHamburgerMenu className="activeIcon" />
-                <MdClose />
-              </button>
-            )
+        pathname !== '/'
+          ? (
+            <Link to={link} id="backLink">
+              <MdArrowBackIosNew />
+            </Link>
+          )
+          : (
+            <button type="button" id="menuLink" onClick={handleClickMenu}>
+              <GiHamburgerMenu className="activeIcon" />
+              <MdClose />
+            </button>
+          )
         }
       </div>
       <div className="navTitle">
