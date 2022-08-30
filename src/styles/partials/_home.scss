@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
+  margin: 1.5rem;
   background-color: accent($color-bg, 6);
 }
 
@@ -10,15 +11,15 @@
   flex-basis: 100%;
   padding: 2em;
 
+  &:hover {
+    opacity: 0.5;
+  }
+
   & > a {
     display: flex;
-    // align-items: center;
+    font-size: 2rem;
     flex-direction: column;
     gap: 2em;
-
-    &:hover {
-      opacity: 0.5;
-    }
   }
 
   &:first-child {
@@ -32,7 +33,7 @@
 
 .regionMenu {
   background-color: accent($color-accent, 3);
-  flex-basis: 100%;
+  flex-basis: 49%;
   padding: 2em;
 
   & > a {
@@ -42,8 +43,9 @@
     gap: 1em;
   }
 
-  &:nth-child(2n) {
+  &:first-child {
     background-color: accent($color-accent, 4);
+    flex-basis: 100%;
   }
 }
 
@@ -58,14 +60,18 @@
 }
 
 .regionTitle {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 .map {
-  min-height: 40vh;
-  width: 100%;
+  min-height: 30vh;
+  width: 90%;
+}
+
+.map > svg.rsm-svg {
+  height: 55vh;
 }
 
 #menu {
@@ -83,7 +89,7 @@
 
 @media screen and (min-width: 48em) {
   .region {
-    flex-basis: 48%;
+    flex-basis: 50%;
     margin: 0.2rem;
 
     &:first-child {

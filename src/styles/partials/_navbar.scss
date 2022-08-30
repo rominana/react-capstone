@@ -15,13 +15,14 @@ header {
 
   .activeIcon {
     display: block;
+    font-size: 50px;
   }
 }
 
 .navTitle {
   font-size: 2rem;
   font-weight: bolder;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .searchBar {
