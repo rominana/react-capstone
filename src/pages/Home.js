@@ -13,7 +13,7 @@ const Home = () => {
   };
 
   return (
-    <div className="wrapper">
+    <div className="container">
       <ul className="regions">
         {regions.map((region) => (
           <li key={`${region.code}-menu`} className="regionMenu">
