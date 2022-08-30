@@ -6,11 +6,11 @@
   box-sizing: border-box;
 }
 
-$font-color: #121212;
-$color-bg: #fff;
+$color-bg: #121212;
+$color-white: #fff;
+$color-accent: #f69;
 
 body {
   background-color: $color-bg;
-  color: $font-color;
-  font-size: 20px;
+  color: $color-white;
 }
