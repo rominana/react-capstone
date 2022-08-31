@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { Provider } from 'react-redux';
 import { MemoryRouter } from 'react-router-dom';
@@ -18,12 +18,7 @@ const renderApp = () => {
 };
 
 describe('integrations tests', () => {
-  test('Match Snapshot', () => {
+  test('match Snapshot', () => {
     expect(renderApp().firstChild).toMatchSnapshot();
-  });
-
-  test('find header section in App', () => {
-    renderApp();
-    expect(screen.getByText(/World Bank GDP/i)).toBeInTheDocument();
   });
 });

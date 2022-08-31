@@ -10,7 +10,7 @@ const Navbar = () => {
   const regions = useSelector((state) => state.regions);
   const { pathname } = useLocation();
   const pathElements = pathname.split('/');
-  const title = pathElements[1] || 'World Bank GDP data per country';
+  const title = pathElements[1] || 'World Bank GDP data per region';
   const aviableCountry = countries.find((country) => country.id === pathElements[2]);
   const aviableRegion = regions.find((region) => region.code === pathElements[2]);
   const detail = aviableRegion?.name || aviableCountry?.name;

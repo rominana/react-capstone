@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`integrations tests Match Snapshot 1`] = `
+exports[`integrations tests match Snapshot 1`] = `
 <header>
   <div
     class="menuIcon"
@@ -45,7 +45,7 @@ exports[`integrations tests Match Snapshot 1`] = `
   <div
     class="navTitle"
   >
-    World Bank GDP data per country
+    World Bank GDP data per region
   </div>
   <div
     class="searchBar"

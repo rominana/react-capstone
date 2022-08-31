@@ -3,7 +3,6 @@
   flex-wrap: wrap;
   gap: 2em;
   margin: 2.5rem;
-  background-color: accent($color-bg, 6);
 }
 
 .region {
@@ -66,12 +65,12 @@
 }
 
 .map {
-  min-height: 30vh;
-  width: 96%;
+  width: 100%;
+  height: 45vh;
 }
 
 .map > svg.rsm-svg {
-  height: 55vh;
+  height: 45vh;
 }
 
 #menu {
