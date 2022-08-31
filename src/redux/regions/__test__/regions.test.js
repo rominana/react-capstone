@@ -2,18 +2,17 @@ import store from '../../configureStore';
 // import { fetchRegions } from '../regions';
 import { fetchRegions, fetchGDP } from '../regions';
 
-describe('Test reducers for region', () => {
-  test('Check store initial status', () => {
+describe('test reducers for region', () => {
+  test('check store initial status', () => {
     expect(store.getState().regions.length).toBe(0);
   });
 
-  test('Fetch Regions', async () => {
+  test('fetch Regions', async () => {
     await store.dispatch(fetchRegions());
     expect(store.getState().regions).toBeTruthy();
   });
 
-  test('Fetch CountryGDP from Latin America & the Caribbean', async () => {
-    await store.dispatch(fetchRegions());
+  test('fetch CountryGDP from Latin America & the Caribbean', async () => {
     await store.dispatch(fetchGDP('LCN'));
     const region = store.getState().regions.find((region) => region.code === 'LCN');
     expect(region).toBeTruthy();

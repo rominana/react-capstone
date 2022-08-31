@@ -25,7 +25,7 @@ const Details = () => {
             {indicator.date}
           </span>
           <span>
-            {'GDP in Millions: US$ '}
+            {'GDP: US$ '}
             {indicator.value ? currencyFormat(indicator.value) : 'Data not available'}
           </span>
         </li>

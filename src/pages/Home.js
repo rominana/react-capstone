@@ -2,8 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Index from '../components/Index';
-import Loading from '../components/Loading';
-import MapChart from '../components/MapChart';
+import WorldMaps from '../components/WorldMaps';
 
 const Home = () => {
   const regions = useSelector((state) => state.regions);
@@ -19,12 +18,12 @@ const Home = () => {
           <li key={`${region.code}-menu`} className="regionMenu">
             <Link to={`/countries/${region.code}`}>
               <div className="map">
-                {<MapChart region={region.code} /> || <Loading />}
+                <WorldMaps region={region.code} />
               </div>
               <div className="regionInfo">
                 <span className="regionTitle">{region.name}</span>
                 <span>
-                  {<Index regionCode={region.code} /> || <Loading />}
+                  <Index regionCode={region.code} />
                 </span>
               </div>
             </Link>

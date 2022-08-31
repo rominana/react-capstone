@@ -17,16 +17,13 @@ const renderApp = () => {
   return container;
 };
 
-describe('Integrations tests', () => {
+describe('integrations tests', () => {
   test('Match Snapshot', () => {
     expect(renderApp().firstChild).toMatchSnapshot();
   });
 
-  test('Find header in App', () => {
+  test('find header section in App', () => {
     renderApp();
-    expect(screen.getByText(/World Bank/i)).toBeInTheDocument();
-    setTimeout(() => {
-      expect(screen.getByText(/East/i)).toBeInTheDocument();
-    }, 1000);
+    expect(screen.getByText(/World Bank GDP/i)).toBeInTheDocument();
   });
 });

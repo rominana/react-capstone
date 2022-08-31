@@ -53,7 +53,7 @@ const mapData = {
   },
 };
 
-const MapChart = (props) => {
+const worldMaps = (props) => {
   const { region } = props;
   const {
     rotate, scale, geoUrl, projection,
@@ -79,8 +79,8 @@ const MapChart = (props) => {
   );
 };
 
-MapChart.propTypes = {
+worldMaps.propTypes = {
   region: PropTypes.string.isRequired,
 };
 
-export default MapChart;
+export default worldMaps;

@@ -10,17 +10,17 @@ const Navbar = () => {
   const regions = useSelector((state) => state.regions);
   const { pathname } = useLocation();
   const pathElements = pathname.split('/');
-  const title = pathElements[1] || 'World Bank GDP data';
-  const currentCountry = countries.find((country) => country.id === pathElements[2]);
-  const currentRegion = regions.find((region) => region.code === pathElements[2]);
-  const detail = currentRegion?.name || currentCountry?.name;
+  const title = pathElements[1] || 'World Bank GDP data per country';
+  const aviableCountry = countries.find((country) => country.id === pathElements[2]);
+  const aviableRegion = regions.find((region) => region.code === pathElements[2]);
+  const detail = aviableRegion?.name || aviableCountry?.name;
   let link = '/';
 
   if (title === 'countries') {
     link = '/';
   }
   if (title === 'details') {
-    link = `/countries/${currentCountry.region.id}`;
+    link = `/countries/${aviableCountry.region.id}`;
   }
   const handleClickMenu = () => {
     const { display } = document.getElementById('menu').style;
@@ -43,7 +43,7 @@ const Navbar = () => {
 
   return (
     <header>
-      <div className="hamburgerIcon">
+      <div className="menuIcon">
         {
         pathname !== '/'
           ? (

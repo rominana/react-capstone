@@ -18,7 +18,7 @@ const Index = (props) => {
 
     return (
       <span>
-        {'GDP in millions: $US '}
+        {'GDP: $US '}
         {region.gdp[0]?.value ? currencyFormat(region.gdp[0].value) : 'No Data'}
       </span>
     );
@@ -34,14 +34,14 @@ const Index = (props) => {
 
     return (
       <span>
-        {'GDP in millions: $US '}
-        {country.gdp[0] !== 0 ? currencyFormat(country.gdp[0].value) : 'No Data'}
+        {'GDP: $US '}
+        {country.gdp[0] !== 0 ? currencyFormat(country.gdp[0].value) : 'No Data available'}
       </span>
     );
   }
 
   return (
-    <span>Incorrect continent or country</span>
+    <span>Incorrect! Try another country or continent</span>
   );
 };
 

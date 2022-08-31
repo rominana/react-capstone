@@ -11,8 +11,7 @@ describe('test reducers for Countries', () => {
     expect(store.getState().countries).toBeTruthy();
   });
 
-  test('fetch CountryGDP from Paraguay', async () => {
-    await store.dispatch(fetchCountries());
+  test('fetch CountryGDP from my country Paraguay', async () => {
     await store.dispatch(fetchCountryGDP('PRY'));
     const country = store.getState().countries.find((country) => country.id === 'PRY');
     expect(country).toBeTruthy();

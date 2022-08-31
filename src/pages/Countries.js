@@ -2,7 +2,6 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
 import Index from '../components/Index';
-import Loading from '../components/Loading';
 
 const Countries = () => {
   const { regionCode } = useParams();
@@ -16,7 +15,7 @@ const Countries = () => {
             <div className="countryInfo">
               <span className="countryTitle">{country.name}</span>
               <span>
-                {<Index countryCode={country.id} /> || <Loading />}
+                <Index countryCode={country.id} />
               </span>
             </div>
           </Link>
