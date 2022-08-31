@@ -1,4 +1,5 @@
-# React Capstone - World Bank GDP data
+# React Capstone 
+## World Bank GDP data
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
