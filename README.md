@@ -49,6 +49,7 @@ Give a ⭐️ to if you like this project!
 ## Acknowledgments
 
 - Microverse
+- The UX designer of this project, [Nelson Sakwa](https://www.behance.net/sakwadesignstudio).
 
 ## 📝 License
 
