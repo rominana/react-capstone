@@ -31,9 +31,10 @@
 }
 
 .regionMenu {
-  background-color: accent($color-accent, 3);
+  // background-color: accent($color-accent, 3);
   flex-basis: 49%;
   padding: 2em;
+  outline: 2px solid #000;
 
   & > a {
     display: flex;
@@ -43,8 +44,9 @@
   }
 
   &:first-child {
-    background-color: accent($color-accent, 4);
+    // background-color: accent($color-accent, 4);
     flex-basis: 100%;
+    outline: 2px solid #000;
   }
 }
 
