@@ -3,14 +3,18 @@ import './styles/App.scss';
 import Home from './pages/Home';
 import Details from './pages/Details';
 import Countries from './pages/Countries';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/countries/:regionCode" element={<Countries />} />
-      <Route path="/details/:countryCode" element={<Details />} />
-    </Routes>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/countries/:regionCode" element={<Countries />} />
+        <Route path="/details/:countryCode" element={<Details />} />
+      </Routes>
+    </>
   );
 }
 

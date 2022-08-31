@@ -1,8 +1,9 @@
-# React Capstone
+# React Capstone 
+## World Bank GDP data
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-
+React App based on the World Bank GDP data, displays a Home page with a list of Continents, that you can filter by each one og the, and then click to see each country details. Built with React.js and Redux. The UI is based on a [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) [original design](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)).
 
 ## Built With
 ![](https://img.shields.io/badge/-HTML-orange) ![](https://img.shields.io/badge/-CSS-blue) ![](https://img.shields.io/badge/-JavaScript-yellow) ![](https://img.shields.io/badge/-React-cyan)
@@ -14,6 +15,8 @@
 - webpack
 - React
 - Redux
+
+## Demo Video
 
 ## Getting Started
 
@@ -42,7 +45,6 @@ Feel free to check the [issues page](https://github.com/rominana/react-capstone/
 ## Show your support
 
 Give a ⭐️ to if you like this project!
-
 
 ## Acknowledgments
 
