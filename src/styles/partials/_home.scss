@@ -7,6 +7,7 @@
 
 .region {
   background-color: accent($color-principal, 5);
+  // background-color: #ff5093;
   flex-basis: 100%;
   padding: 2em;
 
@@ -33,7 +34,7 @@
 .regionMenu {
   background-color: accent($color-principal, 3);
   flex-basis: 49%;
-  padding: 2em;
+  padding: 1em;
 
   & > a {
     display: flex;
@@ -85,10 +86,11 @@
   position: relative;
 }
 
-@media screen and (min-width: 48em) {
+// MOBILE VERSION
+
+@media screen and (min-width: 50em) {
   .region {
-    flex-basis: 50%;
-    margin: 0.2rem;
+    flex-basis: 100%;
 
     &:first-child {
       flex-basis: 100%;
