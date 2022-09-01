@@ -1,0 +1,36 @@
+.countries {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  background-color: accent($color-bg, 6);
+}
+
+.country {
+  background-color: accent($color-principal, 4);
+  padding: 2em;
+}
+
+.country > a {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.countryInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 1.8rem;
+}
+
+.countryTitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
